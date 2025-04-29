@@ -1,44 +1,71 @@
-# Ex.No:1(E)  STATIC VARIABLE
+# Ex.No:1(D) USER DEFINED METHOD.
 
 ## AIM:
-To write a Java program to print student details (name and age), where age is the same for all students. Use a static variable to represent the age and demonstrate its use in accessing a shared value across all class objects
+To write a Java program to calculate and print the area of a circle by defining an instance method and using local variables. The class name is Area, the method name is calculateArea(), and the return type is void.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Create a class named Student.
-3.	Declare a static variable age in the Student class.
-4.	Declare an instance variable name.
-5.	Create a constructor to initialize the student's name.
-6.	Define a method displayDetails() to print the student's name and age.
-7.	In the main method:
-I.	Assign a value to the static variable age.
-II.	Create multiple Student objects with different names.
-III.	Call the displayDetails() method for each student.
-8.	End the program.
+1. Start the program.
+
+2. Import the `java.util` package.
+
+3. Define a class named `Area`.
+
+4. Declare an instance method named `calculateArea()` with return type `void`.
+
+5. Inside the method:
+   
+   a) Create a `Scanner` object to read user input.
+   
+   b) Declare local variables `radius` and `cirarea`.
+   
+   c) Read the radius value from the user.
+   
+   d) Calculate the area using the formula `3.14 * radius * radius`.
+   
+   e) Print the calculated area.
+
+6. In the `main` method:
+   
+   a) Create an object of the `Area` class.
+   
+   b) Call the `calculateArea()` method using the object.
+
+7. End the program.
+
+
 
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Static Variable using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a User Defined Method using Java
+Developed by: ArunKumar.T
+RegisterNumber:  212222040017
 */
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
-
-
+```java
+import java.util.*;
+public class Area {
+        double calculateArea()
+    {
+        double radius,cirarea;
+        Scanner sc=new Scanner(System.in);
+        radius=sc.nextDouble();
+        cirarea=3.14*radius*radius;
+        return cirarea;
+    }
+        public static void main(String[] args) {
+       Area obj=new Area();
+       double area=obj.calculateArea();
+       System.out.println("Area of Circle is "+area);
+    }
+}
+```
 ## OUTPUT:
-
-
+![image](https://github.com/user-attachments/assets/ed252e49-6612-47ca-b513-113432021f3c)
 
 ## RESULT:
-Thus, the Java program for the concept of using a static variable for shared data was correctly implemented and verified successfully. 
-
+Thus, the Java program to calculate the area of a circle using an instance method and local variables with a void return type is successfully created and executed.
