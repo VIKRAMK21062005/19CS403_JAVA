@@ -1,8 +1,7 @@
 # Ex.No:1(B) VARIABLES AND OPERATOR
 
 ## AIM:
-To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
-
+To Define a program to find out if he/she is eligible to retire. A person is eligible to retire if his/her age is greater than or equal to 58 by using instance method and local variable. 
 ## ALGORITHM :
 1.Start the program.
 
@@ -71,4 +70,4 @@ public class Age {
 ![image](https://github.com/user-attachments/assets/d117b107-56e1-486e-b7ce-0fe96d2251ce)
 
 ## RESULT:
-Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+Thus, the Java program to find out if he/she is eligible to retire using an instance method and a local variable is created successfully.
