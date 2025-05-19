@@ -1,27 +1,27 @@
-# Ex.No:7(B) EXCEPTION HANDLING-FINALLY
-## AIM:
-To Write a Java program to demonstrate control flow of try-catch-finally clause when NumberFormat Exception occur in try block and handled in catch block
 
+# Ex.No:7(C)  THREAD IN JAVA
+## AIM:
+ To Develop a Java program to create Thread using extends class.
 
 ## ALGORITHM :
-1.	Start the Program
-2.	Import `java.util.*` for input handling
-3.	Define class `HelloWorld`:
--	a) In `main` method, create `Scanner` object `sc` for input
-4.	Use `try` block to:
--	a) Read a string `str` from user input
--	b) Convert `str` to an integer using `Integer.parseInt()` and print the result
-5.	Use `catch` block to handle `NumberFormatException`:
--	a) If the string can't be converted to an integer, print the exception message
-6.	Use `finally` block to:
--	a) Print "Finally block executed"
-7.	After the `try-catch-finally` block, print "Outside try-catch-finally clause"
-8.	End
+1.  Start the Program
+2.	Import necessary classes: `java.util.*`
+3.	Define a class `Multi` that extends `Thread`:
+-	a) Create a `Scanner` instance for user input.
+-	b) Override the `run` method:
+-	i) Read a string from user input.
+-	ii) Print "Thread Name:" followed by the input string.
+4.	In the `main` method:
+-	a) Create an instance of `Multi`.
+-	b) Create a new `Thread` instance using the `Multi` object.
+-	c) Start the thread with `t1.start()`.
+5.	End
+
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Exception Handling-Finally using Java
+Program to implement a Thread concepts using Java
 Developed by: ArunKumar T
 RegisterNumber: 212222040017
 */
@@ -29,38 +29,28 @@ RegisterNumber: 212222040017
 
 ## Sourcecode.java:
 ```java
-import java.util.*;
-public class HelloWorld {
-    public static void main(String[] args) 
-    {
-      Scanner sc=new Scanner(System.in);
-       try
-        {
-           String str=sc.nextLine();
-           int a=Integer.parseInt(str);
-           System.out.println("Result:" +a);
-        }
-         
-        catch(NumberFormatException ex)
-        {
-            System.out.println("Exception: " +ex);
-        }
-         
-        finally
-        {
-            System.out.println("Finally block executed");
-        }
-         
-        // rest program will be executed
-        System.out.println("Outside try-catch-finally clause");
-    }
-}
+   import java.util.*;
+    public class Multi extends Thread
+    {  
+        Scanner sc=new Scanner(System.in);
+        
+    public void run()
+    {  
+        int count=sc.nextInt();
+        System.out.println("Thread Count: " +count);  
+    }  
+    public static void main(String args[]){  
+    Multi t1=new Multi();  
+    t1.start();  
+     }  
+    }  
 ```
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/1f9fd324-fd13-443e-9433-665e78d87058)
+![image](https://github.com/user-attachments/assets/c02075c4-14a5-47cb-96ef-d8e549fb3282)
 
 ## RESULT:
-Thus the Java program to demonstrate control flow of try-catch-finally clause when NumberFormatException occur in try block and handled in catch block was executed successfully.
+Thus the Java program for the creation of Thread using Thread class was executed successfully.
+
 
