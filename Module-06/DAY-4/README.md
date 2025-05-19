@@ -1,37 +1,71 @@
-# Ex.No:6(D) PACKAGES
-## AIM:
-  To create a Java Program for accessing package from another package using packagename.
- 
-## ALGORITHM :
-1.	Start the Program
-2.	Create a directory named pack and save A.java inside it.
-2.	Compile A.java from the parent directory using javac pack/A.java.
-3.	Create another directory named mypack and save B.java inside it.
-4.	Compile B.java from the parent directory using javac mypack/B.java.
-5.	Run B from the parent directory with java mypack.B
+# Ex.No:6(E) HIERARCHICAL INHERITANCE
 
+## AIM:
+To write a Java Program for below Scenario. Media Class have constructor to display "Parent Class is Media" Magazine Class constructor call its parent constructor and display "Magazine is the one of the Child of Media Class". Channel Class constructor call its parent constructor and display "Channel is the one of the Child of Media Class". In Main class create object for Child class and access its corresponding Constructor
+## ALGORITHM :
+
+1. Create a class `Media`
+   → Has a constructor that prints “Parent Class is Media”.
+
+2. Create a class `Magazine` that extends `Media`
+   → Its constructor calls `super()` (parent constructor) and prints a message.
+
+3. Create another class `Channel` that also extends `Media`
+   → Its constructor also calls `super()` and prints a message.
+
+4. In the `main` method:
+
+   * Create a `Magazine` object → prints Media message, then Magazine message.
+   * Create a `Channel` object → prints Media message, then Channel message.
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Packages using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a Multiple Inheritance
+Developed by: ArunKumar T
+RegisterNumber: 212222040017
 */
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
-
-
+```java
+class Media
+{
+    Media()
+    {
+        System.out.println("Parent Class is Media");
+    }
+}
+class Magazine extends Media
+{
+    Magazine()
+    {
+        super();
+        System.out.println("Magazine is the one of the Child of Media Class");
+    }
+}
+class Channel extends Media
+{
+    Channel()
+    {
+        super();
+        System.out.println("Channel is the one of the Child of Media Class");
+    }
+}
+public class Main
+{
+    public static void main(String [] args)
+    {
+        Magazine m = new Magazine();
+        Channel c = new Channel();
+    }
+}
+```
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/12bd4137-de6a-42ee-8d68-506aee756f8c)
 
 
 ## RESULT:
-Thus, the program has accessed the package from another package has been done successfully.
 
+Thus, the java program demonstrates hierarchical inheritance was executed successfully. 
