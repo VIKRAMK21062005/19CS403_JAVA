@@ -6,12 +6,12 @@ To write a Java program that takes continuous input from the user using InputStr
 1.	Start the program.
 2.	Import java.io.*.
 3.	Create an InputStreamReader and wrap it in a BufferedReader.
-    	Use a do-while loop to:
-    	Prompt and read input from the user.
-    	Check if the input ends with #.
+   -	Use a do-while loop to:
+   -	Prompt and read input from the user.
+   -	Check if the input ends with #.
 4.	If yes, break the loop.
-    	Otherwise, print the input.
-    	Close the input stream.
+  -  Otherwise, print the input.
+  -   se the input stream.
 5.	End the program
 
 
