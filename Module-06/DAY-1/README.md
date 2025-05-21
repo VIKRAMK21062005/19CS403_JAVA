@@ -53,7 +53,7 @@ obj.display();
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/8725ac56-5775-4d24-9a3b-aac91716e4ee)
+<img width="500" height="200" src="https://github.com/user-attachments/assets/8725ac56-5775-4d24-9a3b-aac91716e4ee"/>
 
 
 
