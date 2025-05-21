@@ -1,5 +1,5 @@
 
-# Ex.No:6(C)             HIERARCHICAL INHERITANCE 
+# Ex.No:6(D)             HIERARCHICAL INHERITANCE 
 
 ## AIM:
   To Develop a Java program to perform Hierarchical Inheritance for below scenario Parent have method " display" to display "This is Parent Class". Child1 have method "print" to display "This is Child1 Class" Child1 have method "print" to display "Child2 Class". In Main create object for both child1 and child2 and access its member function.
