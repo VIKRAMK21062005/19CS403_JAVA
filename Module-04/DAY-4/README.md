@@ -27,23 +27,46 @@
 
 ## PROGRAM:
  ```
-/*
 Program to implement a final & Static using Java
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Vikram K
+RegisterNumber: 212222040180
 ```
 
 ## Sourcecode.java:
 
+```
+final class Student {
+    String Name;
+    String Id;
+    final String Year = "3th Year";
+    Student(String Name, String Id) {
+        this.Name = Name;
+        this.Id = Id;
+    }
 
+    void print() {
+        System.out.println("Student Details are,");
+        System.out.println("Id is " + Id);
+        System.out.println("Name is " + Name);
+        System.out.println("Year of Studying is " + Year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student("David", "S201");
+        student.print();
+    }
+}
+
+```
 
 
 
 
 
 ## OUTPUT:
-
+<img width="558" alt="Image" src="https://github.com/user-attachments/assets/02e296c7-1a4b-4abf-87bd-cd67d25cc525" />
 
 
 ## RESULT:
