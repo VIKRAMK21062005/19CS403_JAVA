@@ -1,37 +1,80 @@
-# Ex.No:6(D) PACKAGES
+
+# Ex.No:6(C)             HIERARCHICAL INHERITANCE 
+
 ## AIM:
-  To create a Java Program for accessing package from another package using packagename.
- 
+  To Develop a Java program to perform Hierarchical Inheritance for below scenario Parent have method " display" to display "This is Parent Class". Child1 have method "print" to display "This is Child1 Class" Child1 have method "print" to display "Child2 Class". In Main create object for both child1 and child2 and access its member function.
+
+
 ## ALGORITHM :
-1.	Start the Program
-2.	Create a directory named pack and save A.java inside it.
-2.	Compile A.java from the parent directory using javac pack/A.java.
-3.	Create another directory named mypack and save B.java inside it.
-4.	Compile B.java from the parent directory using javac mypack/B.java.
-5.	Run B from the parent directory with java mypack.B
+1.  Start the Program
+2.	Define class `Parent`:
+-	a) Method `show()` to print "This is Parent Class"
+3.	Define class `Child1` that extends `Parent`:
+-	a) Method `print()` to print "This is Child1 Class"
+4.	Define class `Child2` that extends `Parent`:
+-	a) Method `display()` to print "This is Child2 Class"
+5.	In `Main` class `main` method:
+-	a) Create `Child1` object `child` and call `show()` and `print()` on it
+-	b) Create `Child2` object `chi` and call `show()` and `display()` on it
+6.	End
+
+
 
 
 ## PROGRAM:
  ```
-/*
-Program to implement a Packages using Java
-Developed by: 
-RegisterNumber:  
-*/
+Program to implement a Hierarchical Inheritance using Java
+Developed by: Vikram K
+RegisterNumber: 212222040180
 ```
 
 ## Sourcecode.java:
-
-
-
-
-
-
+```java
+class Parent 
+{
+    void display()
+    {
+        System.out.println("This is Parent Class");
+    }
+}
+class  Child1
+{
+    void print()
+    {
+        System.out.println("This is Child1 Class");
+    }
+}
+class Child2
+{
+    void print()
+    {
+        System.out.println("This is Child2 Class");
+    }
+}
+public class main
+{
+    public static void main(String args[])
+    {
+        Parent p=new Parent();
+        p.display();
+        Child1 c1=new Child1();
+        c1.print();
+        p.display();
+        Child2 c2=new Child2();
+        c2.print();
+    }
+}
+```
 
 ## OUTPUT:
 
-
+![image](https://github.com/user-attachments/assets/bd47481a-5ebd-4b8e-8e70-448ca5e7ea92)
 
 ## RESULT:
-Thus, the program has accessed the package from another package has been done successfully.
+Thus the java program for Hierarchical inheritance was executed successfully.
+
+
+
+
+
 
