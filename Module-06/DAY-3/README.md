@@ -1,4 +1,4 @@
-# Ex.No:6(D) PACKAGES
+# Ex.No:6(C) PACKAGES
 ## AIM:
   To create a Java Program for accessing package from another package using packagename.
  
