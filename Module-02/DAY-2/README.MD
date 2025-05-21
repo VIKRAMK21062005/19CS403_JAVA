@@ -24,11 +24,9 @@ b)	Call the `display(8, 9)` method on the `ad` object
 
 ## PROGRAM:
  ```
-/*
 Program to implement a access modifiers using Java
 Developed by: Vikram K
 RegisterNumber:  212222040180
-*/
 ```
 
 ## Sourcecode.java:
@@ -49,11 +47,6 @@ public class A
 }
 
 ```
-
-
-
-
-
 
 ## OUTPUT:
 
